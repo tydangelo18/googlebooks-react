@@ -5,7 +5,7 @@ class Search extends Component {
         return (
             <div className="Search">
                 <form action="">
-                    <input type="text" />
+                    <input onChange={this.props.handleSearch} type="text" />
                     <button type="submit">Search</button>
                 </form>
             </div>
