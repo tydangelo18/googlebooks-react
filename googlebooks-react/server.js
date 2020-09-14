@@ -3,6 +3,8 @@ let express = require('express');
 let bodyParser = require('body-parser');
 let cors = require('cors');
 
+let db = require('./db');
+
 // Create Express App
 let app = express();
 
@@ -13,6 +15,8 @@ let PORT = 3000
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
+
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
