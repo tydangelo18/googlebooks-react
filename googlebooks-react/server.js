@@ -4,6 +4,7 @@ let bodyParser = require('body-parser');
 let cors = require('cors');
 
 let db = require('./db');
+let bookRouter = require('./routes/books');
 
 // Create Express App
 let app = express();
@@ -21,6 +22,8 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 app.get('/', (req, res) => {
     res.send('Hello World!')
 });
+
+app.use('/api', bookRouter);
 
 // Make sure app is listening to PORT 3000
 app.listen(PORT, () => console.log(`Server running and port ${PORT}`));

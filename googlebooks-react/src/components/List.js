@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 //Import Components
 import Cards from './Cards';
+import DeleteButton from './DeleteButton';
+import SaveButton from './SaveButton';
 
 class List extends Component {
     render() {
@@ -14,9 +16,12 @@ class List extends Component {
                     author={book.volumeInfo.authors}
                     description={book.volumeInfo.description} 
                     link={book.volumeInfo.infoLink}
-
+                    
                     />
+                    
                 })}
+                <SaveButton />
+                <DeleteButton />
             </div>
         );
     }
