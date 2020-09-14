@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import request from 'superagent';
 // Import Components
 import Search from '../components/Search';
+
 
 class Books extends Component {
     // Initial State
@@ -15,11 +17,22 @@ class Books extends Component {
         console.log(e.target.value);
         this.setState({ searchBar: e.target.value })
     }
+
+    // API Request Method
+    getAPI = (e) => {
+        e.preventDefault();
+        request
+        .get("https://www.googleapis.com/books/v1/volumes")
+        .query({ q: this.state.searchBar })
+        .then((data) => {
+            console.log(data);
+        })
+    }
     
     render() {
         return (
             <div className="Books">
-                <Search handleSearch={this.handleSearch} />
+                <Search getAPI={this.getAPI} handleSearch={this.handleSearch} />
             </div>
         );
     }
