@@ -3,7 +3,6 @@ import '../styles/Card.css';
 import SaveButton from '../components/SaveButton';
 import axios from 'axios'
 
-const baseURL = 'localhost:3001'
 
 class Card extends Component {
     constructor(props) {
@@ -40,17 +39,18 @@ class Card extends Component {
 
     render() {
         return (
-            <div className="Card">
-                <img src={this.props.image} alt="" />
-                <div className="book">
-                    <h2 className="title">{this.props.title}</h2>
-                    <h3 className="author">{this.props.author}</h3>
-                    <p className="desc">{this.props.description}</p>
-                    <p className="link">{this.props.link}</p>
-                    
+                <div className="Card">
+                    <img src={this.props.image} alt="" />
+                    <div className="book">
+                        <h2 className="title">{this.props.title}</h2>
+                        <h3 className="author">{this.props.author}</h3>
+                        <p className="desc">{this.props.description}</p>
+                        <p className="link">{this.props.link}</p>
+
+                    </div>
+                    <SaveButton handleClick={this.handleClick} />
                 </div>
-                <SaveButton handleClick={this.handleClick} />
-            </div>
+           
         );
     }
 }

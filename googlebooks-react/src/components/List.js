@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import '../styles/List.css';
 //Import Components
 import Card from './Card';
-import SaveButton from './SaveButton';
+
 
 class List extends Component {
   

@@ -6,8 +6,8 @@ class Search extends Component {
         return (
             <div className="Search">
                 <form onSubmit={this.props.getAPI} action="">
-                    <input onChange={this.props.handleSearch} type="text" />
-                    <button type="submit">Search</button>
+                    <input className="input" onChange={this.props.handleSearch} type="text" />
+                    <button className="searchBtn" type="submit">Search</button>
                 </form>
             </div>
         );

@@ -3,3 +3,23 @@
     display: flex;
     justify-content: center;
 }
+
+.input {
+    width: 250px;
+    height: 19px;
+    padding: 2px;
+    border: 1px solid #000000;
+}
+
+.searchBtn {
+    height: 25px;
+    font-weight: bold;
+    background-color: #E4AAC4;
+    border: 1px solid #000000;
+    margin-left: 2px;
+}
+
+.searchBtn:hover {
+    background-color: #000000;
+    color: #EFAAC4;
+}
