@@ -10,7 +10,7 @@ let bookRouter = require('./routes/books');
 let app = express();
 
 // Define the PORT for listening
-let PORT = 3000
+let PORT = process.env.PORT || 3001;
 
 // Grab the body as a JSON off of the network requests
 app.use(bodyParser.urlencoded({ extended: true }));

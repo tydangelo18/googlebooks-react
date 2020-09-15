@@ -15,7 +15,6 @@ class Books extends Component {
 
     // Search Method to change initial state
     handleSearch = (e) => {
-        console.log(e.target.value);
         this.setState({ searchBar: e.target.value })
     }
 
@@ -27,7 +26,7 @@ class Books extends Component {
         .query({ q: this.state.searchBar })
         .then((data) => {
             this.setState({ books: [...data.body.items]})
-            console.log(data);
+            // console.log(data);
         })
     }
     

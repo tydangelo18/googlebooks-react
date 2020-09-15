@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 //Import Components
-import Cards from './Cards';
+import Card from './Card';
 import SaveButton from './SaveButton';
 
 class List extends Component {
+  
     render() {
         return (
             <div className="List">
                 {this.props.books.map((book, i) => {
-                    return <Cards 
+                    return <Card 
+                    
                     key={i}
                     image={book.volumeInfo.imageLinks.thumbnail}
                     title={book.volumeInfo.title}
@@ -19,7 +21,7 @@ class List extends Component {
                     />
                     
                 })}
-                <SaveButton />
+                
             </div>
         );
     }
