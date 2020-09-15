@@ -6,8 +6,8 @@ class SavedCards extends Component {
             <div className="SavedCards">
                 <img src="" alt="" />
                 <div className="savedBook">
-                    <h2></h2>
-                    <h3></h3>
+                    <h2>Backend Coming Soon</h2>
+                    <h3>Database Methods in the works</h3>
                     <p></p>
                     <p></p>
                 </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../components/SavedHeader';
+import Header from '../components/Header';
 import Saved from '../components/Saved';
 
 class SavedBooks extends Component {

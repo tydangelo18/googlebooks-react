@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 class Header extends Component {
@@ -10,10 +11,10 @@ class Header extends Component {
                 </header>
                 <div className="navItems">
                         <div className="search" style={{paddingRight: "10px"}}>
-                            <h3 className="searchNav">Search</h3>
+                            <Link to="/"><h3 className="searchNav">Search</h3></Link> 
                         </div>
                         <div className="saved">
-                            <h3 className="savedNav">Saved</h3>
+                            <Link to="/saved"><h3 className="savedNav">Saved</h3></Link>
                         </div>
                 </div>
             </div>
