@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 //Import Components
 import Cards from './Cards';
-import DeleteButton from './DeleteButton';
 import SaveButton from './SaveButton';
 
 class List extends Component {
@@ -21,7 +20,6 @@ class List extends Component {
                     
                 })}
                 <SaveButton />
-                <DeleteButton />
             </div>
         );
     }
