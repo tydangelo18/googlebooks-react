@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/googlebooks-react/static/css/main.3eea5e96.chunk.css",
+    "main.js": "/googlebooks-react/static/js/main.59fa4423.chunk.js",
+    "main.js.map": "/googlebooks-react/static/js/main.59fa4423.chunk.js.map",
+    "runtime-main.js": "/googlebooks-react/static/js/runtime-main.4a107bfd.js",
+    "runtime-main.js.map": "/googlebooks-react/static/js/runtime-main.4a107bfd.js.map",
+    "static/js/2.31407046.chunk.js": "/googlebooks-react/static/js/2.31407046.chunk.js",
+    "static/js/2.31407046.chunk.js.map": "/googlebooks-react/static/js/2.31407046.chunk.js.map",
+    "index.html": "/googlebooks-react/index.html",
+    "precache-manifest.fc630770fdab88859d03524b73b0c3c8.js": "/googlebooks-react/precache-manifest.fc630770fdab88859d03524b73b0c3c8.js",
+    "service-worker.js": "/googlebooks-react/service-worker.js",
+    "static/css/main.3eea5e96.chunk.css.map": "/googlebooks-react/static/css/main.3eea5e96.chunk.css.map",
+    "static/js/2.31407046.chunk.js.LICENSE.txt": "/googlebooks-react/static/js/2.31407046.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a107bfd.js",
+    "static/js/2.31407046.chunk.js",
+    "static/css/main.3eea5e96.chunk.css",
+    "static/js/main.59fa4423.chunk.js"
+  ]
+}
